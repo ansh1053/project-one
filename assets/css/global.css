@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'my-paralucent';
+    src: url('../fonts/paralucent-bold.woff');
+    src: url('../fonts/paralucent-bold.woff2');
+    src: url('../fonts/paralucent-heavy.woff');
+    src: url('../fonts/paralucent-heavy.woff2');
+}
+
+@font-face {
+    font-family: 'my-sans';
+    src: url('../fonts/sourcesanspro-bold.woff');
+    src: url('../fonts/sourcesanspro-bold.woff2');
+    src: url('../fonts/sourcesanspro-semibold.woff');
+    src: url('../fonts/sourcesanspro-semibold.woff2');
+}
+
+/* Eric Meyer's Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    outline: none;
+}
+
+/*
+ 2.0.1) Font Face
+ -----------------------------*/
+/*Put Your font face Styles here*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 100%;
+    font-family: my-sans;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body img {
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    -o-user-select: none;
+    user-select: none;
+}
+
+figure {
+    margin-bottom: 0;
+    margin: 0;
+}
+
+*:focus {
+    outline: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/*
+ 2.0.3) Form Elements
+ -----------------------------*/
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+    font-family: my-sans;
+}
+
+input,
+select,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+a:focus {
+    outline: none;
+    border: none;
+}
+
+input {
+    line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    padding: 0;
+    border: none;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="file"] {
+    -webkit-appearance: none;
+    cursor: pointer;
+    line-height: normal;
+    overflow: visible;
+}
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+    color: #999;
+    border-color: #ccc;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+button {
+    border: none;
+    background: transparent;
+}
+
+/*global heading*/
+h1 {
+    font-family: my-sans;
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 a{
+    font-size: 1.8rem;
+    font-family: my-sans;
+    transition: all .3s;
+}
+h2 a:hover{
+    color: rgb(172, 172, 28);
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #6cffd5;
+    font-family: my-paralucent;
+}
+
+/* Containers*/
+.container {
+    max-width: 1275px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+.intro {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: #ffe357;
+    padding: 3px 8px;
+    color: rgb(0, 0, 0);
+    border-radius: 6px 7px 0px 0px;
+    display: inline-block;
+    font-weight: bold;
+}
